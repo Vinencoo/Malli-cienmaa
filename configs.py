@@ -13,32 +13,32 @@ def LOGGER(name: str) -> Logger:
 if bool(environ.get("WEBHOOK", False)):
 
     try:
-        API_ID = int(environ.get("API_ID", 1234))
+        API_ID = int(environ.get("API_ID",29712556 ))
     except Exception as e:
         print(f"API_ID Invalid: \n\nLogs: {e}")
 
     try:
-        API_HASH = environ.get("API_HASH", "")
+        API_HASH = environ.get("API_HASH", "ecfb01f9c3b7f307470afb79d8a6d154")
     except Exception as e:
         print(f"API_HASH Invalid: \n\nLogs: {e}")
 
     try:
-        BOT_TOKEN = environ.get("BOT_TOKEN", "")
+        BOT_TOKEN = environ.get("BOT_TOKEN", "6747473491:AAH4V11rTgYrbRDo4LAXbaGZfFJU22V7FxA")
     except Exception as e:
         print(f"BOT_TOKEN Invalid: \n\nLogs: {e}")
 
     try:
-        DATABASE_URI = environ.get("DATABASE_URI", "")
+        DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://nisanonisano2:<nisanonisano2>@cluster0.p2faypc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     except Exception as e:
         print(f"DATABASE_URI Invalid: \n\nLogs: {e}")
 
     try:
-        DATABASE_NAME = environ.get("DATABASE_NAME", "")
+        DATABASE_NAME = environ.get("DATABASE_NAME", ">cluster0")
     except Exception as e:
         print(f"DATABASE_NAME Invalid: \n\nLogs: {e}")
 
     try:
-        ADMINS = set(str(x) for x in environ.get("ADMINS", "").split())
+        ADMINS = set(str(x) for x in environ.get("ADMINS", "6426017463").split())
     except Exception as e:
         print(f"ADMINS Invalid: \n\nLogs: {e}")
 
@@ -54,12 +54,11 @@ if bool(environ.get("WEBHOOK", False)):
 
     DISCONNECT_COMMAND = environ.get("DISCONNECT_CMD", "disconnect")
 
-    BOT_PICS = (environ.get('BOT_PICS', "motech")).split()
+    BOT_PICS = (environ.get('BOT_PICS', "https://graph.org/file/9f7beeabeea3eef692602.jpg")).split()
 
-    FORCE_SUB = environ.get("UPDATE_CHANNEL", "")
+    FORCE_SUB = environ.get("UPDATE_CHANNEL", "-1002135903431")
 
-    SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "official_learning_bots_Support")
-
+    SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "cccyyyuuue")
     START_TXT = environ.get("START_TXT", StartTxT)
 
     HELP_TXT = environ.get("HELP_MESSAGE", HelpTxT)
